@@ -14,7 +14,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "pgrabowski-workshop" #change here
     storage_account_name = "pgrabowskiworkshop" #change here
-    container_name       = "pgrabowskiworkshop" #change here
+    container_name       = "tfstate" #change here
     key                  = "terraform.tfstate"
   }
 }
