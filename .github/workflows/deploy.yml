@@ -85,7 +85,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         
       - name: Update App Service
-        run: |-
+        run: >-
           az webapp config container set
             --name pgrabowski-workshop-webapp 
             --resource-group pgrabowski-workshop 
