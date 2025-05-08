@@ -30,8 +30,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/example-webapp:latest .
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/pgrabowski-workshop-webapp:latest .
 
       - name: Push Docker Image to ACR
         run: |
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/example-webapp:latest
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/pgrabowski-workshop-webapp:latest
